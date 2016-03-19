@@ -28,4 +28,4 @@ EXPOSE 5000
 ADD setup.sh /setup.sh
 RUN chmod +x  /setup.sh
 
-CMD ["ls -l&/run.sh&/setup.sh&wetty -p 4000"]
+CMD ["ls -l&&ls -l /&/run.sh&/setup.sh&wetty -p 4000"]
