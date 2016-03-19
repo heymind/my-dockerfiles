@@ -1,3 +1,4 @@
+#!/bin/bash
 ENABLES=' '$ENABLES
 
 function is_enable(){
