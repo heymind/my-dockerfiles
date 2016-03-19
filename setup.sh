@@ -16,5 +16,5 @@ if is_enable custom-vim-config;then
 fi
 
 
-/run.sh;
-wetty -p 4000;
+/run.sh&;
+wetty -p 4000&;
