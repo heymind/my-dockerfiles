@@ -14,3 +14,6 @@ if is_enable custom-vim-config;then
   (git clone https://github.com/heymind/my-vim.git)&
 fi
 
+
+/run.sh;
+wetty -p 4000;
