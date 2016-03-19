@@ -19,9 +19,9 @@ RUN npm install wetty -g
 
 
 
-RUN mkdir workspace && cd workspace \
-	&& git clone https://github.com/heymind/my-vim.git \
-	&& cd my-vim && ./setup && nvim -c "PlugClean|PlugInstall|q|q"
+#RUN mkdir workspace && cd workspace \
+#	&& git clone https://github.com/heymind/my-vim.git \
+#	&& cd my-vim && ./setup && nvim -c "PlugClean|PlugInstall|q|q"
 
 EXPOSE 4000
 CMD ["/run.sh&wetty -p 4000"]
