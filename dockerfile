@@ -5,23 +5,23 @@ RUN apt-get update \
   && apt-get install -y python-dev python-pip python3-dev \
   python3-pip curl software-properties-common
 
-#RUN add-apt-repository -y ppa:neovim-ppa/unstable \
-#  && apt-get update \
-#  && apt-get install -y neovim
+RUN add-apt-repository -y ppa:neovim-ppa/unstable \
+  && apt-get update \
+  && apt-get install -y neovim
   
-#RUN curl -sL https://deb.nodesource.com/setup_4.x | bash - \
-#  &&apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_4.x | bash - \
+  &&apt-get install -y nodejs
 
-#RUN npm install wetty -g 
+RUN npm install wetty -g 
 
 
 #RUN curl -sSf https://static.rust-lang.org/rustup.sh | sh
 
 
 
-#RUN mkdir workspace && cd workspace \
+RUN mkdir workspace && cd workspace \
 	&& git clone https://github.com/heymind/my-vim.git \
 	&& cd my-vim && ./setup && nvim -c "PlugClean|PlugInstall|q|q"
 
-#EXPOSE 4000
-#CMD ["/run.sh&wetty -p 4000"]
+EXPOSE 4000
+CMD ["/run.sh&wetty -p 4000"]
