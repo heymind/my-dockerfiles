@@ -6,5 +6,11 @@ function is_enable(){
 }
 
 if is_enable rust;then
-  
+  (curl -sSf https://static.rust-lang.org/rustup.sh | sh)&
 fi
+
+if is_enable custom-vim-config;then
+  mkdir workspace;
+  (git clone https://github.com/heymind/my-vim.git)&
+fi
+
