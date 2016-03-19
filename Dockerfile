@@ -24,4 +24,8 @@ RUN npm install wetty -g
 #	&& cd my-vim && ./setup && nvim -c "PlugClean|PlugInstall|q|q"
 
 EXPOSE 4000
-CMD ["/run.sh&wetty -p 4000"]
+EXPOSE 5000
+ADD setup.sh /setup.sh
+RUN chmod +x  /setup.sh
+
+CMD ["/run.sh&/setup.sh&wetty -p 4000"]
