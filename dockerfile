@@ -3,7 +3,7 @@ MAINTAINER heymind
 
 RUN apt-get update \
   && apt-get install -y python-dev python-pip python3-dev \
-  python3-pip curl software-properties-common sudo
+  python3-pip curl software-properties-common sudo git
 
 RUN add-apt-repository -y ppa:neovim-ppa/unstable \
   && apt-get update \
