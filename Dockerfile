@@ -28,4 +28,4 @@ EXPOSE 5000
 ADD setup.sh /setup.sh
 RUN chmod +x  /setup.sh
 
-CMD ["/setup.sh"]
+CMD /setup.sh
